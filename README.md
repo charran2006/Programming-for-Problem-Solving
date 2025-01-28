@@ -1,3 +1,16 @@
+ALGORITHM TO CALCULATE SUM OF EVEN NUMBERS
+Input: Read an integer value n from the user (this is the upper limit)
+Initialize: Set a variable sum = 0 to store the sum of even numbers.
+Loop: Start a loop from i=1 to n.
+For each iteration, check if the current number i is even (i.e., i%2==0).
+If i is even, add i to sum
+Output: After the loop finishes, print the value of sum, which represents the sum of all even numbers from 1 to n.
+
+
+
+
+
+PSEUDOCODE:
 #include <stdio.h>
 
 int main() {
