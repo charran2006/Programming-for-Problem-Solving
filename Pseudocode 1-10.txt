@@ -1,0 +1,131 @@
+1. Algorithm to Calculate Sum of Even Numbers:
+
+START
+INPUT n
+SET sum ← 0
+FOR i ← 1 TO n DO
+    IF i MOD 2 = 0 THEN
+        sum ← sum + i
+    ENDIF
+ENDFOR
+PRINT sum
+STOP
+---------------------------------------------------------------------------
+2. Factorial Using Recursion:
+
+START
+FUNCTION factorial(x)
+    IF x = 1 THEN
+        RETURN 1
+    ELSE
+        RETURN x × factorial(x - 1)
+    ENDIF
+ENDFUNCTION
+INPUT n
+SET result ← factorial(n)
+PRINT result
+STOP
+---------------------------------------------------------------------------
+3. Prime Number Check:
+
+START
+INPUT n
+IF n ≤ 1 THEN
+    PRINT "Not Prime"
+    STOP
+ENDIF
+FOR i ← 2 TO n/2 DO
+    IF n MOD i = 0 THEN
+        PRINT "Not Prime"
+        STOP
+    ENDIF
+ENDFOR
+PRINT "Prime"
+STOP
+---------------------------------------------------------------------------
+4. Finding the Largest Number in an Array:
+
+START
+INPUT n
+INPUT array of size n
+SET max ← array[0]
+FOR i ← 1 TO n-1 DO
+    IF array[i] > max THEN
+        SET max ← array[i]
+    ENDIF
+ENDFOR
+PRINT max
+STOP
+-------------------------------------------------------------------------------
+5. Simple Interest Calculator:
+
+START
+INPUT P, R, T
+SET SI ← (P × R × T) / 100
+PRINT SI
+STOP
+--------------------------------------------------------------------------------
+6. Generate Fibonacci Series:
+
+START
+INPUT n
+SET a ← 0, b ← 1
+PRINT a, b
+FOR i ← 3 TO n DO
+    SET c ← a + b
+    PRINT c
+    SET a ← b
+    SET b ← c
+ENDFOR
+STOP
+--------------------------------------------------------------------------------
+7. Number Guessing Game:
+
+START
+SET random_number ← RANDOM(1, 100)
+REPEAT
+    INPUT guess
+    IF guess > random_number THEN
+        PRINT "Lower"
+    ELSE IF guess < random_number THEN
+        PRINT "Higher"
+    ELSE
+        PRINT "Correct!"
+    ENDIF
+UNTIL guess = random_number
+STOP
+---------------------------------------------------------------------------------
+8. Temperature Conversion:
+
+START
+INPUT C
+SET F ← (C × 9/5) + 32
+PRINT F
+STOP
+----------------------------------------------------------------------------------
+9. Converting Vowels in a String:
+
+START
+INPUT string
+SET count ← 0
+FOR each character in string DO
+    IF character is a vowel THEN
+        count ← count + 1
+    ENDIF
+ENDFOR
+PRINT count
+STOP
+----------------------------------------------------------------------------------
+10. Find the GDC of Two Numbers:
+
+START
+INPUT a, b
+
+WHILE b ≠ 0 DO
+    SET temp ← b
+    SET b ← a MOD b
+    SET a ← temp
+ENDWHILE
+
+PRINT a
+STOP
